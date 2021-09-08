@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     entry: path.resolve(__dirname, './src/index.tsx'),
     resolve: {
-        extensions: ['.tsx', 'ts', 'js'],
+        extensions: ['.tsx', '.ts', '.js'],
     },
     module: {
         rules: [
@@ -16,7 +16,7 @@ module.exports = {
                         loader: 'babel-loader',
                     }
                 ]
-            }
+            },
         ]
     },
     output: {
