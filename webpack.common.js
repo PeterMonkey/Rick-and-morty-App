@@ -7,7 +7,7 @@ module.exports = {
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
     },
-    mode: 'production',
+    
     module: {
         rules: [
             {
@@ -51,7 +51,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, './build'),
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
     },
     
     plugins: [
